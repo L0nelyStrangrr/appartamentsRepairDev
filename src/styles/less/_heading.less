@@ -1,0 +1,58 @@
+@import "_variables.less";
+
+h1 {
+    font-size: @f-size-h-main;
+    line-height: @l-height-h-main;
+    font-weight: @f-weight-h;
+    font-size: 'Bebas Neue', cursive;
+}
+
+.heading {
+    background: radial-gradient(22.07% 39.61% at 35.05% 47.08%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), url('../img/main-bg.jpeg');
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+
+    &__content {
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        
+        h1 {
+            margin-top: 44px;
+            margin-bottom: 31px;
+            font-family: 'Bebas Neue', cursive;
+            font-style: normal;
+            font-weight: normal;
+        }
+
+        div {
+            font-style: normal;
+            font-size: 30px;
+            line-height: 36px;
+            font-weight: 400;
+            width: 100%;
+            margin-bottom: 69px;
+        }
+
+        a{
+            display: inline-block;
+            padding: 15px 46px;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+            border-bottom-right-radius: 25px;
+            background-color: @secondary-color;
+            transition: 0.2s;
+
+            &:hover {
+                box-shadow: 0px 0px 0px 21px rgba(252, 215, 32, 0.41);
+            }
+        }
+    }
+}
+

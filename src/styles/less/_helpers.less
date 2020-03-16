@@ -1,0 +1,181 @@
+@import "_variables.less";
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: local('Bebas Neue Regular'), local('BebasNeueRegular'), url('../fonts/bebasneueregular.woff2') format('woff2'), url('../fonts/bebasneueregular.woff') format('woff'), url('../fonts/bebasneueregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;   
+}
+
+body {
+    position: relative;
+    font-family: @f-family-basic;
+    font-size: @f-size-basic;
+    line-height: @l-height-basic;
+    font-weight: @f-weight-basic;
+    color: @main-color;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+h1 {
+    font-size: @f-size-h-main;
+    line-height: @l-height-h-main;
+}
+
+h2 {
+    text-align: center;
+}
+
+h1,h2 {
+    font-family: @f-family-h;
+    font-weight: @f-weight-h;
+}
+
+h2 {
+    font-size: @f-size-h;
+    line-height: @l-height-h;
+}
+
+h3 {
+    position: relative;
+    font-family: @f-family-basic;
+    font-size: @f-size-basic;
+    line-height: @l-height-basic;
+    font-weight: @f-weight-basic;
+    color: @main-color;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: @main-color;
+}
+
+input[type='text'], input[type='button'] {
+    width: 200px;
+    height: 40px;
+    background: @ipput-place-holder;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-size: @f-size-basic;
+    line-height: @l-height-basic;
+    font-family: @f-family-basic;
+    outline: none;
+    margin: 0 10px;
+
+    &::placeholder {
+        color: rgba(0, 0, 0, 0.39);
+    }
+}
+
+input[type='button'] {
+    background: @secondary-color;
+    cursor: pointer;
+
+}
+
+
+input[type="checkbox"]:checked, 
+input[type="checkbox"]:not(:checked), 
+input[type="radio"]:checked, 
+input[type="radio"]:not(:checked) 
+{
+    position: absolute;
+    left: -9999px;
+}
+
+input[type="checkbox"]:checked + label, 
+input[type="checkbox"]:not(:checked) + label, 
+input[type="radio"]:checked + label, 
+input[type="radio"]:not(:checked) + label {
+    display: inline-block;
+    position: relative;
+    padding-left: 28px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label:before, 
+input[type="checkbox"]:not(:checked) + label:before,
+input[type="radio"]:checked + label:before, 
+input[type="radio"]:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+}
+
+input[type="checkbox"]:checked + label:before, 
+input[type="checkbox"]:not(:checked) + label:before {
+    border: 1px solid #C4C4C4;
+}
+
+input[type="radio"]:checked + label:before, 
+input[type="radio"]:not(:checked) + label:before {
+    border: 1px solid #C4C4C4;
+}
+
+input[type="checkbox"]:checked + label:after, 
+input[type="checkbox"]:not(:checked) + label:after, 
+input[type="radio"]:checked + label:after, 
+input[type="radio"]:not(:checked) + label:after {
+    content: "";
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+input[type="checkbox"]:checked + label:after, 
+input[type="checkbox"]:not(:checked) + label:after {
+    left: 1px;
+    top: 1px;
+    width: 20px;
+    height: 20px;
+    background-color: @secondary-color;
+}
+
+input[type="radio"]:checked + label:after, 
+input[type="radio"]:not(:checked) + label:after {
+    left: 1px;
+    top: 1px;
+    width: 20px;
+    height: 20px;
+    background-color: @secondary-color;
+}
+
+input[type="checkbox"]:not(:checked) + label:after, 
+input[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+}
+
+input[type="checkbox"]:checked + label:after, 
+input[type="radio"]:checked + label:after {
+    opacity: 1;
+}
+
+

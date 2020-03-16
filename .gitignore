@@ -1,0 +1,34 @@
+# W3TC- W3 Total Cache
+w3tc-config/
+cache/
+mobile/cache
+
+# Netbeans
+/nbproject/private/
+nbproject
+
+# visual studio code
+.vscode/*
+
+# WebStorm / PhpStorm
+.idea/*
+.idea
+
+# Env
+.htaccess
+.gitkeep
+nginx.conf
+wp-config.php
+
+node_modules
+/node_modules
+#bower_components
+.sass-cache
+#Gemfile*
+
+build
+/build
+
+
+
+

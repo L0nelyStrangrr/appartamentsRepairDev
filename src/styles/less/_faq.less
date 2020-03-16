@@ -1,0 +1,50 @@
+.faq {
+    padding: 84px 0 120px 0;
+
+    h2 {
+        padding-bottom: 20px;
+    }
+
+    &__wrap {
+        width: calc(100% / 12 * 10);
+        margin: 0 auto;
+    }
+
+    &__question {
+        padding: 20px 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__opener {
+        width: calc(100% / 10 * 1);
+
+        div {
+            width: 30px;
+            height: 30px;
+            left: 575px;
+            top: 4229px;
+            text-align: center;
+            line-height: 28px;
+            background: #fff;
+            border: 1px solid #000000;
+            transition: 0.24s;
+            cursor: pointer;
+        }
+
+        .active {
+            background-color: @secondary-color;
+        }
+
+    }
+
+    &__answer {
+        width: calc(100% / 10 * 9);
+        margin-left: auto;
+        display: none;
+
+        &-active {
+            display: block;
+        }
+    }
+}

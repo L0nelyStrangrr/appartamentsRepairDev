@@ -1,0 +1,19 @@
+.footer {
+
+    &__content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        
+        span {
+            align-self: flex-end;
+            font-size: @f-size-header;
+            line-height: @l-height-header;
+        }
+
+        span:nth-child(1) {
+            width: calc(100% / 12 * 2);
+        }
+    }
+}
